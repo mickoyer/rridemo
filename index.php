@@ -11,6 +11,7 @@
  */
 function disable() {
     document.getElementById("company").disabled=true;
+//     alert("Here");
 }
 
 /*
@@ -19,8 +20,8 @@ function disable() {
  */
 function enable() {
     document.getElementById("company").disabled=false;
-
-    window.onload = enable;
+//     alert("There");
+//     window.onload = enable;
 }
 
 function validateForm() {
@@ -96,11 +97,11 @@ input {
   <input type="text" name="website" size="35" value="http://www.example.com">
   <br><br>
   Type:<p>
-  <input type="radio" name="type" value="employer" checked="checked" onclick="disable()">Agent/Employer<p>
-  <input type="radio" name="type" value="employee" onclick="enable()">Employee<p>
+  <input type="radio" name="type" value="employer" onclick="disable()">Agent/Employer<p>
+  <input type="radio" name="type" value="employee" checked="checked" onclick="enable()">Employee<p>
 
   <br><br>
-<select name="company">
+<select id="company">
   <option>Acme Widget Co.</option>
   <option>Globex Corporation</option>
   <option>Initech, Inc.</option>

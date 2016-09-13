@@ -12,6 +12,10 @@ Suggested improvements:
 Form validation only validates whether there is null input.  It should also check for valid email addresses and
 website addresses.
 
-Create and use a database model.
+setup a database (MySQL) and convert to use a database model.
 
-Save text file in CSV format.
+Text files are saved in CSV format but should be more selective with the text elements.
+
+Note: the form fields are pre-filled to make testing easier.  Edit the index.php file to remove
+the pre-filled fields.
+
