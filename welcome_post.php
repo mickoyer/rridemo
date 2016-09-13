@@ -26,6 +26,8 @@ input {
 
 <?php
 
+	// validate web input
+	
 	function test_input($data) {
 	  $data = trim($data);
 	  $data = stripslashes($data);
@@ -34,6 +36,7 @@ input {
 	}
 
 	// define variables and set to empty values
+	
 	$name = $email = $type = $website = "";
 
 	if ($_SERVER["REQUEST_METHOD"] == "POST") {
