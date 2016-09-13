@@ -57,14 +57,14 @@ input {
 			fwrite($file, "\"$name\", \"$email\", \"$website\", \"$type\", \"$company\"\n");
 			fclose($file);
 		}
+		print "<br><blockquote>Added data to $company file</blockquote>\n";
 	  }
 	  else {
   
 		if (file_exists($company)) {
 		
-// 			$contents = file_get_contents($company);
-// 			$contents = str_replace($line, '', $contents);
-// 			file_put_contents($company, $contents);
+			// Todo: add code to see if employee already exists.  If so, replace the
+			// line in the file.
 			
 			$file = fopen($company,"a");
 			fwrite($file, "\"$name\", \"$email\", \"$website\", \"$type\", \"$company\"\n");
@@ -75,6 +75,7 @@ input {
 			fwrite($file, "\"$name\", \"$email\", \"$website\", \"$type\", \"$company\"\n");
 			fclose($file);
 		}
+		print "<br><blockquote>Added data to $company file</blockquote>\n";
 	  }
 	}
 ?>
