@@ -19,3 +19,5 @@ Text files are saved in CSV format but should be more selective with the text el
 Note: the form fields are pre-filled to make testing easier.  Edit the index.php file to remove
 the pre-filled fields.
 
+Todo: add code to see if employee already exists.  If so, replace the line in the file with current data.
+
