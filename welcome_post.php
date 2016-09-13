@@ -42,7 +42,6 @@ input {
 	  $email = test_input($_POST["email"]);
 	  $website = test_input($_POST["website"]);
 	  $type = test_input($_POST["type"]);
-	  $company = test_input($_POST["type"]);
 
 	  $company = ($_POST['company']);
 
@@ -63,10 +62,9 @@ input {
   
 		if (file_exists($company)) {
 		
-			$contents = file_get_contents($company);
-			
-			$contents = str_replace($line, '', $contents);
-			file_put_contents($company, $contents);
+// 			$contents = file_get_contents($company);
+// 			$contents = str_replace($line, '', $contents);
+// 			file_put_contents($company, $contents);
 			
 			$file = fopen($company,"a");
 			fwrite($file, "\"$name\", \"$email\", \"$website\", \"$type\", \"$company\"\n");

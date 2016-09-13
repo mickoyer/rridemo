@@ -101,7 +101,7 @@ input {
   <input type="radio" name="type" value="employee" checked="checked" onclick="enable()">Employee<p>
 
   <br><br>
-<select id="company">
+<select id="company" name="company">
   <option>Acme Widget Co.</option>
   <option>Globex Corporation</option>
   <option>Initech, Inc.</option>
